@@ -13,7 +13,10 @@ SoftwareSerial bluetooth(BT_RXD, BT_TXD);
 void setup() {
   Serial.begin(9600);
   bluetooth.begin(9600);
-  //pinMode(13, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
   bluetooth.println("Initialize...");
 }
 
